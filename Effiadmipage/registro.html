@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registrarse - EFFIADMI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+        <img src="logo.svg" alt="EFFIADMI" class="logo-img">
+      </a>
+  </header>
+
+  <main>
+    <section class="auth">
+      <div class="auth-card container">
+        <h2>Crear cuenta</h2>
+        <p class="small">Crea tu cuenta para comenzar a gestionar tu empresa.</p>
+        <form id="registerForm">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" placeholder="tu@ejemplo.com" required>
+
+          <label for="clave">Contraseña</label>
+          <input id="clave" name="clave" type="password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+
+          <button type="submit" class="btn btn-primary full" style="margin-top:12px;">Registrarse</button>
+          <p style="margin-top:12px; color:var(--gris)">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
